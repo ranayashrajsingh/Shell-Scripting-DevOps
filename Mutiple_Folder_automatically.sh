@@ -2,6 +2,9 @@
 
 # Automatically create multiple folders with the help of a for loop and mkdir in shell scripting
 
-for num in {1..5}; do
-    mkdir "demo$num"
+read -p "Enter how many folder want to create : " folder_number
+
+for ((num = 1; num <= $folder_number; num++)); do
+	read -p "Enter the $num folder name : " foldername
+   	mkdir "$foldername"
 done
