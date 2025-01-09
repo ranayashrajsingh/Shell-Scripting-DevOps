@@ -1,0 +1,1 @@
+echo "character are : $0 $1 $2"
